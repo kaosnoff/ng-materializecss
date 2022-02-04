@@ -12,6 +12,7 @@
     "angular 2",
     "angular 4",
     "angular 5",
+    "angular 6",
     "angular 14",
     "materialize",
     "materializecss",
@@ -28,7 +29,9 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "commit": "git-cz",
-    "build": "sh build.sh",
+    "build": "yarn build:windows",
+    "build:linux": "sh build.sh",
+    "build:windows": "PowerShell .\\build.ps1",
     "presemantic-release": "semantic-release pre",
     "semantic-release": "npm publish",
     "postsemantic-release": "semantic-release post"
