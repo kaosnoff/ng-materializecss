@@ -1,31 +1,42 @@
-build
-dist
-webpack-dist
-jspm_packages
-node_modules
-typings
-typings.json
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-package
-*.tgz
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
 
+# Node
+/node_modules
 npm-debug.log
+yarn-error.log
 
-*.iml
+# IDEs and editors
 .idea/
-.idea_modules/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-app/**/*.js
-app/**/*.js.map
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
 
-test/**/*.js
-test/**/*.js.map
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
 
-!karma*.js
-!test/karma*.js
-
-/compiled
-*.metadata.json
-
+# System files
 .DS_Store
-.vscode
+Thumbs.db

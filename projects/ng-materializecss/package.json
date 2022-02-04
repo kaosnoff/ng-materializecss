@@ -1,0 +1,35 @@
+{
+  "type": "module",
+  "name": "ng-materializecss",
+  "version": "0.0.1",
+  "description": "Angular support for Materialize CSS framework",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaosnoff/angular2-materialize.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular 2",
+    "angular 4",
+    "angular 5",
+    "angular 6",
+    "angular 14",
+    "materialize",
+    "materializecss",
+    "materialize-css",
+    "materialize css"
+  ],
+  "author": "Vitor Freire <kaosnoff@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^13.2.0",
+    "@angular/core": "^13.2.0",
+		"hammerjs": "^2.0.8",
+    "materialize-css": "^1.0.0",
+		"jquery": "^3.6.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
