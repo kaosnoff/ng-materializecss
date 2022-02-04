@@ -1,13 +1,13 @@
 {
   "name": "kaosnoff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve ng-materializecss",
     "build": "ng build ng-materializecss",
     "dev": "ng build ng-materializecss --watch --configuration development",
     "commit": "git-cz",
-    "release": "cd projects/ng-materializecss && yarn release",
+    "release": "yarn build && cd projects/ng-materializecss && yarn release",
     "test": "ng test ng-materializecss",
     "lint": "ng lint ng-materializecss"
   },
@@ -55,8 +55,8 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "ng-packagr": "^13.0.0",
-    "typescript": "~4.5.2",
-    "semantic-release": "^19.0.2"
+    "semantic-release": "^19.0.2",
+    "typescript": "~4.5.2"
   },
   "repository": {
     "type": "git",
