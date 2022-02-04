@@ -1,23 +1,23 @@
-import { 
-	AfterViewInit, 
-	Directive, 
-	DoCheck, 
-	ElementRef, 
-	EventEmitter, 
-	Input, 
-	OnChanges, 
-	OnDestroy, 
-	Output 
-} from "@angular/core";
+import
+	{
+		AfterViewInit,
+		Directive,
+		DoCheck,
+		ElementRef,
+		EventEmitter, Input,
+		OnChanges,
+		OnDestroy,
+		Output
+	} from "@angular/core";
 import { CustomEvent } from './custom-event-polyfill';
 
 declare var $: any;
-declare var Materialize: any;
+declare var M: any;
 
 export interface NgMaterializecssAction
 {
 	action: string;
-	params: [any];
+	params: any;
 }
 
 @Directive({
@@ -89,7 +89,7 @@ export class NgMaterializecssDirective implements AfterViewInit, DoCheck, OnChan
 	{
 		if (this.isSelect())
 		{
-			setTimeout(() => this.performLocalElementUpdates(), 10);
+			setTimeout(() => this.performLocalElementUpdates(), 30);
 		}
 	}
 
@@ -148,9 +148,9 @@ export class NgMaterializecssDirective implements AfterViewInit, DoCheck, OnChan
 	private performElementUpdates()
 	{
 		// it should have been created by now, but confirm anyway
-		if (Materialize && Materialize.updateTextFields)
+		if (M && M.updateTextFields)
 		{
-			Materialize.updateTextFields();
+			M.updateTextFields();
 		}
 
 		// handle select changes from the HTML
@@ -284,20 +284,20 @@ export class NgMaterializecssDirective implements AfterViewInit, DoCheck, OnChan
 				} else
 				{
 					// fallback to running this function on the global Materialize object
-					if (Materialize[functionName])
+					if (M[functionName])
 					{
 						if (params)
 						{
 							if (params instanceof Array)
 							{
-								Materialize[functionName](...params);
+								new M[functionName](this._el.nativeElement, ...params);
 							} else
 							{
 								throw new Error("Params has to be an array.");
 							}
 						} else
 						{
-							Materialize[functionName]();
+							new M[functionName](this._el);
 						}
 					} else
 					{

@@ -6,7 +6,8 @@
       "ng-materializecss": [
         "dist/ng-materializecss/ng-materializecss",
         "dist/ng-materializecss"
-      ]
+      ],
+			"@angular/*": [ "../node_modules/@angular/*" ]
     },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",

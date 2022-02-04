@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { NgMaterializecssDirective } from './ng-materializecss.directive';
+import { NgMaterializecssService } from './ng-materializecss.service';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,10 @@ import { NgMaterializecssDirective } from './ng-materializecss.directive';
   ],
   exports: [
     NgMaterializecssDirective
-  ]
+  ],
+	providers: [
+		NgMaterializecssService,
+		NgMaterializecssDirective
+	]
 })
 export class NgMaterializecssModule { }
