@@ -1,16 +1,16 @@
 // This file is used by ngc to create the files in the build directory
 {
   "compilerOptions": {
-    "outDir": "../build",
-    "rootDir": ".",
-    "baseUrl": ".",
     "declaration": true,
-    "module": "esnext",
-    "target": "es6",
+    "module": "es2015",
+    "target": "es5",
+    "baseUrl": ".",
     "stripInternal": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-		"moduleResolution": "node",
+    "moduleResolution": "node",
+    "outDir": "../build",
+    "rootDir": ".",
     "lib": [
       "es2015",
       "dom"
@@ -20,15 +20,9 @@
     "types": []
   },
   "angularCompilerOptions": {
-		"enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-		"strictTemplates": true,
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
-    "skipTemplateCodegen": true,
-		"compilationMode": "partial",
-		"flatModuleOutFile": true,
-		"fullTemplateTypeCheck": true
+    "skipTemplateCodegen": true
   },
   "files": [
     "./index.ts"

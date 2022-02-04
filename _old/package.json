@@ -1,0 +1,79 @@
+{
+  "name": "@kaosnoff/angular2-materialize",
+  "version": "0.0.5",
+  "description": "Angular support for Materialize CSS framework",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaosnoff/angular2-materialize.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular 2",
+    "angular 4",
+    "angular 5",
+    "angular 6",
+    "angular 14",
+    "materialize",
+    "materializecss",
+    "materialize-css",
+    "materialize css"
+  ],
+  "author": "Vitor Freire <kaosnoff@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InfomediaLtd/angular2-materialize/issues"
+  },
+  "homepage": "https://github.com/InfomediaLtd/angular2-materialize#readme",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "commit": "git-cz",
+    "build": "yarn build:windows",
+    "build:linux": "sh build.sh",
+    "build:windows": "PowerShell .\\build.ps1",
+    "presemantic-release": "semantic-release pre",
+    "semantic-release": "npm publish",
+    "postsemantic-release": "semantic-release post"
+  },
+  "peerDependencies": {
+    "materialize-css": "^1.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run build"
+    }
+  },
+  "devDependencies": {
+    "@angular/cli": "^8.3.29",
+    "@angular/common": "^8.2.14",
+    "@angular/compiler": "^8.2.14",
+    "@angular/compiler-cli": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "@angular/forms": "^8.2.14",
+    "@angular/platform-browser": "^8.2.14",
+    "@angular/platform-browser-dynamic": "^8.2.14",
+    "@angular/router": "^8.2.14",
+    "codelyzer": "^5.0.1",
+    "commitizen": "2.9.6",
+    "core-js": "^2.4.1",
+    "cz-conventional-changelog": "2.0.0",
+    "ghooks": "2.0.0",
+    "gulp": "3.9.1",
+    "gulp-rimraf": "0.2.1",
+    "gulp-typescript": "3.1.6",
+    "hammerjs": "^2.0.8",
+    "jquery": "^2.2.4",
+    "rollup": "^0.41.6",
+    "run-sequence": "1.2.2",
+    "rxjs": "^6.6.7",
+    "semantic-release": "^6.3.6",
+    "typescript": "3.5.3",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2",
+    "zone.js": "~0.9.1"
+  }
+}

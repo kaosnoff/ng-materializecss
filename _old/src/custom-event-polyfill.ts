@@ -8,3 +8,4 @@ if ("Event" in window)
 {
 	CustomEvent.prototype = (window as any).Event.prototype;
 }
+
