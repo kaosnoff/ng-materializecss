@@ -227,6 +227,10 @@ To include a local package in your project, we suggest using `yarn link`. After 
 
 Run `yarn build` to build the project. The build artifacts will be stored in the `dist/ng-materializecss` directory.
 
+## Publish
+
+To publish new releases, it is necessary to fork this project and change the name of the package. After that, run `yarn publish` to send your library as a public NPM package.
+
 <!--
 ## Running unit tests
 

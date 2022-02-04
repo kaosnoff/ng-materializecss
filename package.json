@@ -1,6 +1,6 @@
 {
   "name": "kaosnoff",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve ng-materializecss",
@@ -8,7 +8,7 @@
     "dev": "ng build ng-materializecss --watch --configuration development",
     "commit": "git-cz",
     "presemantic-release": "semantic-release pre",
-    "semantic-release": "npm publish",
+    "semantic-release": "npm publish --access public",
     "postsemantic-release": "semantic-release post",
     "test": "ng test ng-materializecss",
     "lint": "ng lint ng-materializecss"
