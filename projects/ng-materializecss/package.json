@@ -1,7 +1,7 @@
 {
   "type": "module",
-  "name": "ng-materializecss",
-  "version": "0.0.1",
+  "name": "@kaosnoff/ng-materializecss",
+  "version": "1.0.0",
   "description": "Angular support for Materialize CSS framework",
   "repository": {
     "type": "git",
