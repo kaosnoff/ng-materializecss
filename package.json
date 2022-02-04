@@ -15,6 +15,14 @@
     "lint": "ng lint ng-materializecss"
   },
   "private": true,
+	"config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run build"
+    }
+  },
   "dependencies": {
     "@angular/animations": "~13.2.0",
     "@angular/common": "~13.2.0",
@@ -42,6 +50,7 @@
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
     "eslint": "^8.2.0",
+		"ghooks": "^2.0.4",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
