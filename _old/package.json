@@ -48,15 +48,15 @@
     }
   },
   "devDependencies": {
-    "@angular/cli": "^8.3.29",
-    "@angular/common": "^8.2.14",
-    "@angular/compiler": "^8.2.14",
-    "@angular/compiler-cli": "^8.2.14",
-    "@angular/core": "^8.2.14",
-    "@angular/forms": "^8.2.14",
-    "@angular/platform-browser": "^8.2.14",
-    "@angular/platform-browser-dynamic": "^8.2.14",
-    "@angular/router": "^8.2.14",
+    "@angular/cli": "^9.1.15",
+    "@angular/common": "^9.1.13",
+    "@angular/compiler": "^9.1.13",
+    "@angular/compiler-cli": "^9.1.13",
+    "@angular/core": "^9.1.13",
+    "@angular/forms": "^9.1.13",
+    "@angular/platform-browser": "^9.1.13",
+    "@angular/platform-browser-dynamic": "^9.1.13",
+    "@angular/router": "^9.1.13",
     "codelyzer": "^5.0.1",
     "commitizen": "2.9.6",
     "core-js": "^2.4.1",
@@ -71,9 +71,9 @@
     "run-sequence": "1.2.2",
     "rxjs": "^6.6.7",
     "semantic-release": "^6.3.6",
-    "typescript": "3.5.3",
+    "typescript": "3.8.3",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.2",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.10.3"
   }
 }
